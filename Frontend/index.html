@@ -20,13 +20,48 @@
             <a class="mr-5 hover:text-gray-900">Home</a>
             <a class="mr-5 hover:text-gray-900">Help</a>
             <a class="mr-5 hover:text-gray-900">Contact</a>
-            <a class="mr-5 hover:text-gray-900">Agent Login</a>
+            <a id="form-admin" class="mr-5 hover:text-gray-900">Admin Login</a>
+            <a id="form-agent" class="mr-5 hover:text-gray-900">Agent Login</a>
           </nav>
-          <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Login/Sign Up
+          <button id="form-user" class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Login/Sign Up
           </button>
         </div>
       </header>
+
+
+<article class="wrapper shadow-lg shadow-gray-500" id="main-admin-login">
+<form action="" class="login-form">
+  <h2 class="text-2xl font-bold text-gray-600">Admin Login</h2>
+<div>
+  <label for="adimn-username">Username</label>
+<input type="text" class="text-input adimn-username" placeholder="Enter username" maxlength="80" autofocus="">
+</div>
+
+<div>
+  <label for="adimn-password">Password</label>
+<input type="text" class="text-input adimn-password" placeholder="Enter password" maxlength="80" autofocus="">
+</div>
+
+<div>
+  <div>
+    <label for="adimn-answer">Security question?</label>
+    <p class="question">What is name of your cat?</p>
+  </div>
+  
+<input type="text" class="text-input adimn-answer" placeholder="answer here" maxlength="80" autofocus="">
+</div>
+
+<div>
+  <button class="inline-flex text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded text-lg">Login</button>
+</div>
+
+</form>
+
+</article>
+
+
       <section class="text-gray-600 body-font">
+        <vedio></vedio>
         <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
           <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
             <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Before they sold out
