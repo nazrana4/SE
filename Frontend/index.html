@@ -9,25 +9,126 @@
      <script src="index.js" defer></script>
 </head>
 <body>
-    <header class="text-gray-600 body-font">
-        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-          <span class="ml-3 text-3xl italic font-bold">Intercity</span>
-          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-            <img src="./images/express-5.svg" alt="logo" class="w-40">
+  <header class="text-gray-600 body-font">
+  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+    <span class="ml-3 text-3xl italic font-bold">Intercity</span>
+    <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+      <img src="./images/express-5.svg" alt="logo" class="w-40">
+      
+    </a>
+    <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+      <a class="mr-5 hover:text-gray-900">Home</a>
+      <a class="mr-5 hover:text-gray-900">Help</a>
+      <a class="mr-5 hover:text-gray-900">Contact</a>
+      <a id="form-admin" class="mr-5 hover:text-gray-900">Admin Login</a>
+      <a id="form-agent" class="mr-5 hover:text-gray-900">Agent Login</a>
+    </nav>
+    <button id="form-user" class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Login/Sign Up
+    </button>
+  </div>
+</header>
+
+
+<article class="wrapper shadow-lg shadow-gray-500" id="main-admin-login">
+<form action="" class="login-form">
+<h2 class="text-2xl font-bold text-gray-600">Admin Login</h2>
+<div>
+<label for="adimn-username">Username</label>
+<input type="text" class="text-input adimn-username" placeholder="Enter username" maxlength="80" autofocus="">
+</div>
+
+<div>
+<label for="adimn-password">Password</label>
+<input type="text" class="text-input adimn-password" placeholder="Enter password" maxlength="80" autofocus="">
+</div>
+
+<div>
+<div>
+<label for="adimn-answer">Security question?</label>
+<p class="question">What is name of your cat?</p>
+</div>
+
+<input type="text" class="text-input adimn-answer" placeholder="answer here" maxlength="80" autofocus="">
+</div>
+
+<div>
+<button class="inline-flex text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded text-lg">Login</button>
+</div>
+
+</form>
+
+</article>
+
+      <article style="height: 30rem; width: 30rem;" class="mx-auto wrapper" id="main-user-login" >
+        <form action="action_page.php" method="post" class="mx-auto p-8" style="height: 100%; width: 100%;">
+    
+          <div class="login-form">
             
-          </a>
-          <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-            <a class="mr-5 hover:text-gray-900">Home</a>
-            <a class="mr-5 hover:text-gray-900">Help</a>
-            <a class="mr-5 hover:text-gray-900">Contact</a>
-            <a class="mr-5 hover:text-gray-900">Agent Login</a>
-          </nav>
-          <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Login/Sign Up
-          </button>
+            <h2 class="font-medium"><h1  id="form-heading" class="sm:text-4xl text-2xl font-bold title-font mb-2 text-gray-500 text-center">LOGIN</h1></h2><br>
+            <div>
+              <label for="uname"></label><h1 class="sm:text-xl text-xl font-small title-font mb-2 text-gray-900 ml-4 ">Username</h1></label>
+              <input type="text" class="text-input" placeholder="Enter Username" name="uname" required>
+            </div>
+          <div>
+            <label for="psw"><h1 class="sm:text-xl text-xl font-small title-font mb-2 text-gray-900 ml-4 ">Password</h1></label>
+            <input class="text-input" type="password" placeholder="Enter Password" name="psw">
+            <br>
+          </div>
+            <div class="forgot-password" style="background-color:#f1f1f1">
+              <span class="psw text-blue-500 hover:text-blue-700 hover:underline"> <a href="#">Forgot password?</a></span>
+              <p class="psw text-blue-500 hover:text-blue-700 hover:underline">Not a user,click register to create an account!</p>
+            </div>
+            <div>
+              
+            </div>
+            <div class="flex justify-center">
+              <div class="w-64"> 
+                <button class="inline-flex text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded text-lg">LOGIN</button>
+              </div>
+              <div class="w-64" id="register-form"> 
+                <button id="main-register-form" class="inline-flex text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded text-lg">REGISTER</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </article>
+      <article class="wrapper register-ui" id="register-load">
+        <div>
+          <h2 class="font-medium"><h1  id="form-heading" class="sm:text-4xl text-2xl font-bold title-font mb-2 text-gray-500 text-center">User Details</h1></h2><br>
         </div>
+        <div><form action="" class="login-form register-ui form-ui">
+          <div>
+          <input class="text-input" type="text" placeholder="User Name" required>
+          <input class="text-input" type="password" name="" id="" placeholder="Password">
+        </div>
+        <div>
+          <input class="text-input" type="password" name="" id="" placeholder="Confirm Password">
+          <input class="text-input" type="text" placeholder="First Name" required>
+        </div>
+/*<<<<<<< arya*/
       </header>
       <article>
         
+/*=======*/
+        <div>
+          <input class="text-input" type="text" placeholder="Middle Name" required>
+          <input class="text-input" type="text" placeholder="Last Name" required>
+        </div>
+        <div>
+          <input class="text-input" type="date" name="Date of Birth" id="">
+            <input type="number" name="" id="" placeholder="Phone Number +91"></div>
+          <div><input class="text-input" type="email" placeholder="Email">
+          </div>
+
+       <div>  <span><input class="text-input" type="radio" name="Male" id="">&nbsp;Male</span>
+     
+          <span><input class="text-input" type="radio" name="Female" id="">&nbsp;Notmale</span>
+        </div> 
+        <div>
+          <button id="main-register-form" class="inline-flex text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded text-lg">Register</button>
+          </div>
+</form></div>
+/*>>>>>>> arya*/
       </article>
       <section class="text-gray-600 body-font">
         <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
