@@ -1,4 +1,3 @@
-/*arya*/
 .ticket-form {
     max-width: 400px;
     margin: 20px auto;
@@ -39,7 +38,6 @@
     background-color: #45a049;
     color: white;
 }
-/*=======*/
 .register-ui{
     display: flex;
     height: 35rem;
@@ -67,7 +65,8 @@ border-radius: 5px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: 10;
+    z-index: inherit;
 }
 
 .login-form div{
@@ -137,4 +136,36 @@ border-bottom: 3px solid #ccc;
 
     height: 450px;
 }
-/*>>>>>arya*/
+
+
+.hero{
+
+    height: 40rem;
+    position: relative;
+}
+.from-to{
+    left: 10%;
+    position: absolute;}
+
+.hero_text{
+    position: absolute;
+    right: 15%;
+    top: 40%;
+   
+}
+
+.hero_text strong{
+font-size: 5rem;
+font-weight: bolder;
+color: rgb(190, 45, 45);
+}
+
+.packages{
+    width: 100%;
+    height: 100%;
+}
+
+
+footer nav li{
+    margin-bottom: 25px;
+}

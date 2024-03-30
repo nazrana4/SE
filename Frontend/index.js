@@ -26,3 +26,4 @@ document.getElementById("main-register-form").addEventListener('click',()=>{
 
     
 })
+
